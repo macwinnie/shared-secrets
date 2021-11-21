@@ -1,6 +1,7 @@
 # do not publish live config file
 config/*
 !config/config.php.default
+!config/config.env.php
 
 # do not publish macOS blergh
 ._*
@@ -8,3 +9,10 @@ config/*
 .DS_Store?
 .Spotlight-V100
 .Trashes
+
+# ignore PHP Composer vendors
+vendors/composer
+
+# ignore environmental var definition files
+.env*
+!.env.example

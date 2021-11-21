@@ -1,0 +1,22 @@
+{
+    "name": "syseleven/shared-secrets",
+    "type": "project",
+    "homepage": "https://github.com/syseleven/shared-secrets",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Yahe",
+            "email": "hello@yahe.sh"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "^0.12",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "config": {
+        "vendor-dir": "vendors/composer"
+    },
+    "scripts": {
+        "post-install-cmd": "./vendors/composer/bin/phinx migrate"
+    }
+}
